@@ -1,0 +1,36 @@
+.todo{
+    text-align: center;
+    border: 1px solid blue;
+    min-height: 500px;
+    width: 400px;
+    margin: 0 auto;
+}
+.todo input,button{
+    padding: 5px;
+    font-size: large;
+
+}
+.todo ul {
+    list-style-type: none;
+}
+.todo button{
+    background-color: blue;
+    color: white;
+    width: 70px;
+    border: 1px solid blue;
+    border-radius: 5px;
+
+}
+.todo input:focus{
+    outline: 1px solid blue;
+}
+.todo ul li button{
+    margin: 4px;
+}
+.todo ul li{
+    font-size: 20px;
+}
+.todo h1{
+    color: blue;
+    text-transform: uppercase;
+}

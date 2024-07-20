@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="todo">
+        <h1>BUILD TO-DO LIST</h1>
+        <input type="text" id="input" placeholder="Add some task">
+        <button type="submit" onclick="Add()">Add</button>
+         <ul >
+         </ul>
+    </div>
+    <script>
+        let input = document.getElementById('input');
+        function Add(){
+            let val=document.getElementsByTagName("ul")[0]
+             let value;
+        
+            if(input.value!=""){
+               value = input.value;
+               let li = document.createElement('li');
+               li.innerHTML = value+"<button onclick=Delete(event)>Delete</button>";
+               val.append(li)
+               input.value = "";
+            }
+        }
+        function Delete(event){
+             event.target.parentElement.remove();
+        }
+    </script> 
+</body>
+</html>
